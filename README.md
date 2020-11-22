@@ -17,6 +17,8 @@ react-native with TypeScript - whatsApp clone with AWS amplify backend. Chats ar
 
 ## Screens
 
+Just Ignore names i have used ! i know it is quite funny.
+
 ![chat-list](assets/images/screens/chat-list.png)
 ![chat-screen](assets/images/screens/chat-screen.png)
 ![contact-list](assets/images/screens/contact-list.png)
