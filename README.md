@@ -17,6 +17,6 @@ react-native with TypeScript - whatsApp clone with AWS amplify backend. Chats ar
 
 ## Screens
 
-![chat-list]('/assets/images/screens/chat-list.png')
-![chat-screen]('/assets/images/screens/chat-screen.png')
-![contact-list]('/assets/images/screens/contact-list.png')
+![chat-list](assets/images/screens/chat-list.png)
+![chat-screen](assets/images/screens/chat-screen.png)
+![contact-list](assets/images/screens/contact-list.png)
