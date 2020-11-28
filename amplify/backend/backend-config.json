@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "whatsappcloned12927a0": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
