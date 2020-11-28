@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "whatsappcloned12927a0_identitypool_d12927a0",
+    "identityPoolName": "whatsappclone668dc79f_identitypool_668dc79f",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "whatsad12927a0",
-    "userPoolName": "whatsappcloned12927a0_userpool_d12927a0",
+    "resourceNameTruncated": "whatsa668dc79f",
+    "userPoolName": "whatsappclone668dc79f_userpool_668dc79f",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "whatsad12927a0_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "whatsa668dc79f_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "d12927a0",
-    "resourceName": "whatsappcloned12927a0",
+    "sharedId": "668dc79f",
+    "resourceName": "whatsappclone668dc79f",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [

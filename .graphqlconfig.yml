@@ -1,6 +1,6 @@
 projects:
   whatsappclone:
-    schemaPath: ../../../../../../graphql/schema.json
+    schemaPath: graphql/schema.json
     includes:
       - src/graphql/**/*.ts
     excludes:
@@ -9,7 +9,7 @@ projects:
       amplify:
         codeGenTarget: typescript
         generatedFileName: src/API.ts
-        docsFilePath: /graphql
+        docsFilePath: graphql
 extensions:
   amplify:
     version: 3
