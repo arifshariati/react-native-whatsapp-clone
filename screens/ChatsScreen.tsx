@@ -13,7 +13,7 @@ import ChatListItem from '../components/ChatListItem';
 import NewMessageButton from '../components/NewMessageButton';
 
 //mock Data
-import chatRooms from '../data/ChatRooms';
+//import chatRooms from '../data/ChatRooms';
 
 export default function ChatsScreen() {
 
@@ -36,8 +36,9 @@ export default function ChatsScreen() {
           )
         )
 
+        //console.log(userData);
         setChatRooms(userData.data.getUser.chatRoomUser.items)
-
+          //console.log(chatRooms);
       }
       catch(error){
         console.log(error.message);

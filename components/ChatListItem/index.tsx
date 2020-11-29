@@ -17,6 +17,9 @@ const ChatListItem = (props: ChatListItemProps) => {
     const { chatRoom } = props;
     const [ otherUser, setOtherUser] = useState(null);
 
+    console.log(chatRoom);
+
+
     const navigation = useNavigation();
 
     useEffect(() => {
@@ -39,6 +42,7 @@ const ChatListItem = (props: ChatListItemProps) => {
         id: chatRoom.id,
         name: otherUser.name,
         })
+
     }
 
     if (!otherUser) {

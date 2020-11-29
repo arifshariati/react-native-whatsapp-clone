@@ -25,25 +25,6 @@ const ChatRoomScreen = () => {
 
     useEffect(()=>{
 
-        const fetchMessages = async () => {
-
-            const messagesData = await API.graphql(
-                graphqlOperation(
-                    messagesByChatRoom,
-                    { 
-                        chatRoomID: route.params.id, 
-                        sortDirection:'DESC'
-                    }
-                )
-            );
-
-            setMessages(messagesData.data.messagesByChatRoom.items)
-        }
-        fetchMessages();
-    },[])
-
-    useEffect(()=>{
-
         const getMyId = async () =>{
 
             const userInfo = await Auth.currentAuthenticatedUser();
@@ -53,6 +34,29 @@ const ChatRoomScreen = () => {
         getMyId();
 
     },[]);
+    
+
+    useEffect(()=>{
+
+        const fetchMessages = async () => {
+
+            const messagesData = await API.graphql(
+                graphqlOperation(
+                    messagesByChatRoom,{ 
+                        chatRoomID:route.params.id, 
+                        sortDirection:"DESC"
+                    }
+                )
+            );
+                    console.log(messages);
+            setMessages(messagesData.data.messagesByChatRoom.items)
+        }
+        fetchMessages();
+
+        
+    },[])
+
+    
 
     return (
         <ImageBackground source={backgroundImage} style={{width:'100%',height:'100%'}}>
