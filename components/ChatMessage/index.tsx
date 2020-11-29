@@ -1,21 +1,23 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { View, Text, Image } from 'react-native'
 
 import {Message} from '../../types';
 import moment from 'moment';
 
+
 import styles from './style';
 
 export type ChatMessageProps = {
     message: Message;
+    myId: String;
 }
 
 const ChatMessage = (props:ChatMessageProps) => {
 
-    const { message } = props;
+    const { message, myId } = props;
 
     const isMyMessage = ()=> {
-        return message.user.id === "u1";
+        return message.user.id === myId;
     }
 
     return (
